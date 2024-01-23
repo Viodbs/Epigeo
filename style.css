@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI";
+}
+li {
+  list-style: none;
+}
+a,a:visited {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: white;
+}
+
+/**** NAVBAR ****/
+nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+
+}
+.logo_epigeo2{
+
+  max-width: 60px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/*premiere page*/
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+  background-color: rgb(0, 0, 0);
+
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+nav li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(10, 10, 9);
+  font-size: large;
+
+}
+#icons {
+  cursor: pointer;
+  display: none;
+  color: #fffcfc;
+}
+
+/****NAVBAR 2E****/
+
+.new-navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+.new-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.new-navbar li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+@media (max-width: 824px) {
+
+ /*permet de diposer le bouton du menu burger*/
+  
+  #icons {
+    display: block;
+  }
+  #icons:before {
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    margin-top: 3cm;
+    text-align: center;
+    transition: 0.25s;
+    max-width: 100%; 
+
+  }
+
+  /*espacement entre les puces menu burger*/
+  nav li {
+    padding: 1px ;
+  }
+
+ 
+
+  }
+  nav.active ul {
+    left: 0;
+
+  }
+
+
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: xx-small ;
+}
+
+
+/* Flexbox pour superposer les menus */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles des menus */
+.nav-div {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+
+}
+
+.nav-div ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  max-height: 30%;
+}
+
+.nav-div li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(147, 140, 140);
+
+
+}
+
+.nav-div-second {
+  background: rgb(221, 163, 97);
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+.nav-div-second ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: rgb(221, 163, 97);
+}
+/*puces du menu 2*/
+.nav-div-second li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(236, 214, 156);
+
+}
+.bouton-rond {
+  display: inline-block;
+  background-color: rgb(191, 160, 122);
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px; 
+  padding: 50px 50px; 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.container-b {
+  width: 100%;
+  height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
